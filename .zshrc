@@ -27,3 +27,10 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 
+# tmux
+if [ $SHLVL = 1 ]; then
+  tmux
+fi
+
+# alias
+alias ls='gls --color=auto'
